@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Thrifty</title>
+		<link type="text/css" rel="stylesheet" href="/styles.css" />
+	</head>
+	<body>
+
+		<header>
+			<script src="js/app.js"></script>
+			<div class="logo">
+				<a href="index.html">
+					<h1>Thrifty</h1>
+				</a>
+			</div>
+			<div class="menu">
+				<nav>
+					<a href="shop.html">shop</a>
+					<a href="sell.html">sell</a>
+					<a href="cart.html"><img src="images/shopping-cart-alt.png" /></a>
+				</nav>
+			</div>
+
+		</header>
+
+		<main class="shop">
+			<aside class="filter__list__container">
+				<h3 class="filter__list__title">Filter by:</h3>
+				<form id="filterOptions" class="filter__list">
+						<input onclick="hideShowTops();" checked="true" type="checkbox" id="topsFilter">
+						<label for="topsFilter">tops</label>
+						<br />
+						<input onclick="hideShowBottoms();" checked="true" type="checkbox" id="bottoms">
+						<label for="bottoms">bottoms</label>	
+						<br />
+						<input onclick="hideShowShoes();" checked="true" type="checkbox" id="shoes">
+						<label for="shoes">shoes</label>
+				</form>
+			</aside>
+			<ul class="products__container" id="itemsToFilter">
+				<li class="product shoes">
+					<img src="images/black-shoe.png" />
+					<div class="product__icons__container">
+						<a href="#">
+							<img class="product__icon" src="images/magnifying-glass.png" />
+						</a>
+						<a href="#">
+							<img class="product__icon" src="images/heart.png" />
+						</a>
+						<a href="#">
+							<img class="product__icon" src="images/shopping-cart-alt.png" />
+						</a>
+					</div>
+				</li>
+				<li class="product tops">
+					<img src="images/suit-jacket.png" />
+					<div class="product__icons__container">
+						<a href="#">
+							<img class="product__icon" src="images/magnifying-glass.png" />
+						</a>
+						<a href="#">
+							<img class="product__icon" src="images/heart.png" />
+						</a>
+						<a href="#">
+							<img class="product__icon" src="images/shopping-cart-alt.png" />
+						</a>
+					</div>
+				</li>
+				<li class="product bottoms">
+					<img src="images/pink-pants.png" />
+					<div class="product__icons__container">
+						<a href="#">
+							<img class="product__icon" src="images/magnifying-glass.png" />
+						</a>
+						<a href="#">
+							<img class="product__icon" src="images/heart.png" />
+						</a>
+						<a href="#">
+							<img class="product__icon" src="images/shopping-cart-alt.png" />
+						</a>
+					</div>
+				</li>
+			</ul>
+
+		</main>
+
+		<footer>
+			<div class="logo">
+				<a href="index.html">
+					<h2>Thrifty</h2>
+				</a>
+			</div>
+			<div class="footer__menus">
+				<div class="footer__menu">
+					<h3>Menu</h3>
+					<nav>
+						<a href="shop.html">shop</a>
+						<a href="sell.html">sell</a>
+						<a href="cart.html">cart</a>
+					</nav>
+				</div>
+				<div class="footer__menu">
+					<h3>Departments</h3>
+					<nav>
+						<a href="tops.html">tops</a>
+						<a href="bottoms.html">bottoms</a>
+						<a href="shoes.html">shoes</a>
+					</nav>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>
