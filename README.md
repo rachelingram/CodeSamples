@@ -2,7 +2,7 @@
 This repository contains code samples of HTML, SCSS, JavaScript, and PHP.
 
 <h2>JavaScript</h2>
-The first sample, sample.js, contains a function from a thrift store website called Thrifty. The function hides or displays products by class name so that Thrifty shoppers can filter their search results.<br/>
+The first sample, sample.js, contains a function from a thrift store website called Thrifty. The function hides or displays products by class name so Thrifty shoppers can filter their search results.<br/>
 
 <h2>PHP</h2>
 The second sample, sample.php, has the code for a custom field in WordPress. This custom field allows the site's administrators to add a featured selection to their page by dynamically pulling in post information. 
