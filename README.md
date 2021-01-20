@@ -12,7 +12,9 @@ The third sample, sample.php, has the code for a custom field in WordPress. This
 
 <h2>SCSS</h2>
 The final sample, sample.scss, is the stylesheet for the featured selection custom field in sample.php. Below are images showing the mobile, tablet, and desktop states. <br/>
-<img src="https://github.com/rachelingram/codesamples/images/mobile.png" />
+![mobile](https://github.com/rachelingram/CodeSamples/blob/master/images/mobile.png)
+![tablet](https://github.com/rachelingram/CodeSamples/blob/master/images/tablet.png)<br/>
+![desktop](https://github.com/rachelingram/CodeSamples/blob/master/images/desktop.png)<br/>
 
 <h2>Learn More</h2>
 Be sure to visit my portfolio at <a href="https://rachelmarieingram.com/">rachelmarieingram.com</a> or connect with me on <a href="https://www.linkedin.com/in/rachel-ingram-6a12b91ba/">LinkedIn</a>.
