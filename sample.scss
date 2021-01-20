@@ -1,145 +1,145 @@
 .featured__selection {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/flexible-content-background.jpg);
-    display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/flexible-content-background.jpg);
+  display: flex;
 
-    @include breakpoint(medium up) {
-      position: relative;
-      height: 21rem;
-    }
+  .featured__selection__background {
+    color: $white;
+    box-shadow: none;
 
-    .featured__selection__background {
-      color: $white;
-      box-shadow: none;
+    .featured__selection__copy {
+      margin: 3rem;
 
-      .featured__selection__copy {
-        margin: 3rem;
+      @include breakpoint(medium up) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        margin: 0;
+        z-index: 1;
+      }
 
-        @include breakpoint(medium up) {
-          position: absolute;
-          width: 100%;
+      .featured__selection__content__container {
+        height: 100%;
+
+        .featured__selection__content {
           height: 100%;
-          left: 0;
-          margin: 0;
-          z-index: 1;
-        }
+          align-items: left;
 
-        .featured__selection__content__container {
-          height: 100%;
+          .featured__selection__name {
 
-          .featured__selection__content {
-            height: 100%;
-            align-items: left;
+            a {
+              color: $white;
 
-            .featured__selection__name {
-
-              a {
-                color: $white;
-
-                &:hover {
-                  opacity: 0.5;
-                  transition: opacity 0.2s ease;
-                }
+              &:hover {
+                opacity: 0.5;
+                transition: opacity 0.2s ease;
               }
             }
+          }
 
-            .featured__selection__read__more {
-              float: right;
-              height: 3rem;
+          .featured__selection__read__more {
+            float: right;
+            height: 3rem;
 
-              a {
-                text-transform: uppercase;
-                font-family: 'Viga', sans-serif;
-                color: $white;
-                height: 100%;
+            a {
+              text-transform: uppercase;
+              font-family: 'Viga', sans-serif;
+              color: $white;
+              height: 100%;
+              display: flex;
+
+              &:after {
+                content: "\f101";
+                font-family: "Font Awesome 5 Pro";
+                font-size: 3rem;
+                padding-left: 1rem;
                 display: flex;
+              }
+
+              &:hover {
+                color: $white;
 
                 &:after {
-                  content: "\f101";
-                  font-family: "Font Awesome 5 Pro";
-                  font-size: 3rem;
-                  padding-left: 1rem;
-                  display: flex;
-                }
-
-                &:hover {
-                  color: $white;
-
-                  &:after {
-                    padding-left: 2rem;
-                    transition: padding-left 0.2s ease;
-                  }  
-                }               
-              }
+                  padding-left: 2rem;
+                  transition: padding-left 0.2s ease;
+                }  
+              }               
             }
           }
-        } 
+        }
       } 
-    }
+    } 
+  }
 
-    .featured__selection__image__container {
+  .featured__selection__image__container {
+    overflow: hidden;
+    position: relative;
+    height: 21rem;
+
+    a {
       overflow: hidden;
-      position: relative;
-      height: 21rem;
-
-      a {
-        overflow: hidden;
-      }
-
-      .featured__selection__image {
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
-        overflow: hidden;
-
-        @include breakpoint(medium) {
-          transform: scale(3.5);
-          clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
-          object-fit: cover;
-          position: absolute;
-          right: 0;
-        }
-
-        @include breakpoint(large up) {
-          transform: scale(1.25);
-        }
-      }
     }
 
-    @include breakpoint(medium up) {
+    .featured__selection__image {
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      overflow: hidden;
 
-      &.featured__selection__image--left {
-        background-image: none;
+      @include breakpoint(medium) {
+        transform: scale(3.5);
+        clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+        object-fit: cover;
+        position: absolute;
+        right: 0;
+      }
 
-        .featured__selection__background {
-          color: $black;
-          order: 1;
-          background: none;
-
-          .featured__selection__content {
-            align-items: right;
-
-            .featured__selection__name {
-          
-              a {
-                color: $black !important;
-              }
-            }
-
-            .featured__selection__read__more {
-
-              a {
-                color: $black !important;
-              }
-            }
-          }
-        }
-
-        .featured__selection__image {
-          clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
-          left: 0;
-        }
+      @include breakpoint(large up) {
+        transform: scale(1.25);
       }
     }
   }
+
+  @include breakpoint(medium up) {
+
+    &.featured__selection__image--left {
+      background-image: none;
+
+      .featured__selection__background {
+        color: $black;
+        order: 1;
+        background: none;
+
+        .featured__selection__content {
+          align-items: right;
+
+          .featured__selection__name {
+          
+            a {
+              color: $black !important;
+            }
+          }
+
+          .featured__selection__read__more {
+
+            a {
+              color: $black !important;
+            }
+          }
+        }
+      }
+
+      .featured__selection__image {
+        clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+        left: 0;
+      }
+    }
+  }
+    
+  @include breakpoint(medium up) {
+    position: relative;
+    height: 21rem;
+  }    
+}
 
 .featured__selection__background {
     box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.1);
