@@ -1,26 +1,3 @@
-.featured__selection__background {
-    box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.1);
-
-    .featured__selection__read__more {
-        float: right;
-    }
-
-    @include breakpoint(medium up) {
-
-        .featured__selection__image__container {
-            position: relative;
-            overflow-x: hidden;
-            overflow-y: hidden;
-
-            .featured__selection__image {
-                position: absolute;
-                object-fit: fill;
-                transform: scale(4);
-            }
-        }
-    }
-}
-
 .featured__selection {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/flexible-content-background.jpg);
     display: flex;
@@ -49,9 +26,9 @@
         .featured__selection__content__container {
           height: 100%;
 
-        .featured__selection__content {
-          height: 100%;
-          align-items: left;
+          .featured__selection__content {
+            height: 100%;
+            align-items: left;
 
             .featured__selection__name {
 
@@ -90,9 +67,8 @@
                   &:after {
                     padding-left: 2rem;
                     transition: padding-left 0.2s ease;
-                  }
-                  
-                }
+                  }  
+                }               
               }
             }
           }
@@ -101,21 +77,18 @@
     }
 
     .featured__selection__image__container {
-      overflow-y: hidden;
-      overflow-x: hidden;
+      overflow: hidden;
       position: relative;
       height: 21rem;
 
       a {
-        overflow-x: hidden;
-        overflow-y: hidden;
+        overflow: hidden;
       }
 
       .featured__selection__image {
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
-        overfloy-y: hidden;
-        overflow-x: hidden;
+        overflow: hidden;
 
         @include breakpoint(medium) {
           transform: scale(3.5);
@@ -167,3 +140,25 @@
       }
     }
   }
+
+.featured__selection__background {
+    box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.1);
+
+    .featured__selection__read__more {
+        float: right;
+    }
+
+    @include breakpoint(medium up) {
+
+        .featured__selection__image__container {
+            position: relative;
+            overflow: hidden;
+
+            .featured__selection__image {
+                position: absolute;
+                object-fit: fill;
+                transform: scale(4);
+            }
+        }
+    }
+}
