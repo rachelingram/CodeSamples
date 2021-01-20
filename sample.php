@@ -29,8 +29,8 @@ $posts = get_sub_field('choose_a_solution');
     </div>
     <div class="featured__selections show-for-large">
 	    <div class="featured__selections__block">
-		    <?php $i = 0; ?>
-		    <?php foreach ($posts as $post) { ?>
+		<?php $i = 0; ?>
+		<?php foreach ($posts as $post) { ?>
             <?php 
             $i++; 
             ?>
@@ -66,5 +66,4 @@ $posts = get_sub_field('choose_a_solution');
             </div>
         <?php }; ?>
     </div>
-
 <?php }; ?>
